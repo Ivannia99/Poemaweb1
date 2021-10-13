@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shapes Slideshow | Poema | Codrops</title>
+		<meta name="description" content="An experimental slideshow using clip-path to create shape transitions between slides.">
+		<meta name="keywords" content="slideshow, clip-path, shape, gsap, javascript, web design">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="favicon.26242483.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/gpd2hso.css">
+		<link rel="stylesheet" type="text/css" href="base.98fd6c19.css">
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading demo-4">
+		<main>
+			<div class="frame">
+				<h1 class="frame__title">Instantes <span>Shape Slideshow</span></h1>
+				<nav class="frame__links">
+					<a href="http://tympanus.net/Development/CircularTextEffect/">Trabajo</a>
+					<a href="https://tympanus.net/codrops/?p=53694">Poema</a>
+					<a href="https://github.com/codrops/ShapeSlideshow/">Narración Interactiva</a>
+				</nav>
+				<a href="https://tympanus.net/codrops/category/playground/" class="frame__info">Octubre</a>
+				<nav class="frame__demos">
+					<a href="index.html" class="frame__demo">Nada aquí</a>
+					<a href="index2.html" class="frame__demo">Aquí tampoco</a>
+					<a href="index3.html" class="frame__demo">menos aquí</a>
+					<a href="index4.html" class="frame__demo frame__demo--current">Aca si :)</a>
+				</nav>
+				<nav class="slides-nav">
+					<button class="slides-nav__button slides-nav__button--prev" aria-label="Previous slide">
+						<svg><path d="M1.176 11.532a.5.5 0 00-.352.936c5.228 1.96 9.475 5.555 12.752 10.797a.5.5 0 00.848-.53c-3.39-5.424-7.81-9.163-13.248-11.203z"></path><path d="M1.176 12.468a.5.5 0 01-.352-.936C6.052 9.572 10.3 5.978 13.576.735a.5.5 0 01.848.53c-3.39 5.424-7.81 9.163-13.248 11.203z"></path><path d="M1 12.5a.5.5 0 110-1h53a.5.5 0 110 1H1z"></path></svg>
+					</button>
+					<button class="slides-nav__button slides-nav__button--next" aria-label="Next slide">
+						<svg><path d="M53.824 11.532a.5.5 0 01.352.936c-5.228 1.96-9.475 5.555-12.752 10.797a.5.5 0 01-.848-.53c3.39-5.424 7.81-9.163 13.248-11.203z"></path><path d="M53.824 12.468a.5.5 0 00.352-.936C48.948 9.572 44.7 5.978 41.424.735a.5.5 0 00-.848.53c3.39 5.424 7.81 9.163 13.248 11.203z"></path><path d="M54 12.5a.5.5 0 100-1H1a.5.5 0 100 1h53z"></path></svg>
+					</button>
+					<div class="slides-nav__index">
+						<span class="slides-nav__index-current">
+							<span>1</span>
+						</span>
+						&mdash;
+						<span class="slides-nav__index-total">5</span>
+					</div>
+				</nav>
+			</div>
+			<div class="slideshow">
+				<figure class="slide slide--current">
+					<div class="slide__img-wrap"><div class="slide__img" style="background-image: url(escribir.jpg)"></div></div>
+					<figcaption class="slide__caption">
+						<h2 class="slides__caption-headline">
+							<span class="text-row"><span>Instantes</span></span>
+							<span class="text-row"><span>Por<em>BORGES</em>  <strong></strong></span></span>
+						</h2>
+						<a class="slides__caption-link" href="#"><span>Tigre Blanco</span></a>
+					</figcaption>
+				</figure>
+				<figure class="slide">
+					<div class="slide__img-wrap"><div class="slide__img" style="background-image: url(skydiving.jpg)"></div></div>
+					<figcaption class="slide__caption">
+						<h2 class="slides__caption-headline">
+							<span class="text-row"><span>Si pudiera vivir  <strong>nuevam-</strong></span></span>
+							<span class="text-row"><span>- errores <em>+ tonto</em> -serio</span></span>
+						</h2>
+						<a class="slides__caption-link" href="#"><span>+ riesgos + viajes + atardeceres</span></a>
+					</figcaption>
+				</figure>
+				<figure class="slide">
+					<div class="slide__img-wrap"><div class="slide__img" style="background-image: url(helando1.jpg)"></div></div>
+					<figcaption class="slide__caption">
+						<h2 class="slides__caption-headline">
+							<span class="text-row"><span>+ helados <strong>-probelmas</strong></span></span>
+							<span class="text-row"><span>imaginarios <em>+ momentos</em></span></span>
+						</h2>
+						<a class="slides__caption-link" href="#"><span>el ahora</span></a>
+					</figcaption>
+				</figure>
+				<figure class="slide">
+					<div class="slide__img-wrap"><div class="slide__img" style="background-image: url(Sunset.jpg)"></div></div>
+					<figcaption class="slide__caption">
+						<h2 class="slides__caption-headline">
+							<span class="text-row"><span>+ amaneceres <em>pero ya </em></span></span>
+							<span class="text-row"><span><strong>tengo 85</strong> y me <em>estoy</em></span></span>
+						</h2>
+						<a class="slides__caption-link" href="#"><span>muriendo</span></a>
+					</figcaption>
+				</figure>
+				<figure class="slide">
+					<div class="slide__img-wrap"><div class="slide__img" style="background-image: url(Poema2.jpg)"></div></div>
+					<figcaption class="slide__caption">
+						<h2 class="slides__caption-headline">
+							<span class="text-row"><span> <em> </em></span></span>
+							<span class="text-row"><span><strong></strong>  <em></em></span></span>
+						</h2>
+						<a class="slides__caption-link" href="#"><span></span></a>
+					</figcaption>
+				</figure>
+			</div>
+		</main>
+		<script src="demo4.e22d7780.js"></script>
+	</body>
+</html>
